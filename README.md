@@ -2,7 +2,7 @@
 
 > **注意**：本项目专为 Cloudflare Workers 生态设计，深度集成 D1、R2、KV、Workflows 等服务，**仅支持部署在 Cloudflare Workers**。
 
-[部署指南](#部署指南) | [本地开发](#本地开发)
+[部署指南](#部署指南) | [本地开发](#本地开发) | [错误处理开发规范](./docs/error-handling-quickstart.md)
 
 > 建了个tg群，欢迎来技术交流👏 [Telegram 群](https://t.me/+vWuQYybv1kgxMDkx)
 
@@ -279,3 +279,5 @@ bun dev
 ## 贡献
 
 欢迎贡献代码、报告问题或提出建议！请查看 [CONTRIBUTING.md](./CONTRIBUTING.md) 了解开发指南和代码规范。
+
+开始改动业务前，建议先阅读 [错误处理与 Result 模式快速上手](./docs/error-handling-quickstart.md)。
