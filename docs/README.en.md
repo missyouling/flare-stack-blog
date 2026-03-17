@@ -32,13 +32,17 @@ Deeply integrated with D1, R2, KV, Workflows, and other Serverless services.
 ## Core Features
 
 - **Post Management** — Rich text editor supporting syntax highlighting, image uploads, and draft/publish workflows.
+- **Version History** — Automatic editor snapshots and post version history for safer recovery.
 - **Tagging System** — Flexible post categorization.
-- **Comment System** — Supports nested replies, email notifications, and moderation.
+- **Comment System** — Supports nested replies, email notifications, AI-assisted moderation, and richer moderation context.
 - **Friend Links** — User applications, admin moderation, and email notifications.
+- **Notification System** — Supports email and webhook notifications with event-based subscriptions.
 - **Full-Text Search** — High-performance search powered by Orama.
 - **Media Library** — R2 object storage for image management and optimization.
 - **Authentication** — GitHub OAuth login with role-based access control.
+- **MCP Server** — Connect AI clients through OAuth to manage posts, comments, tags, friend links, media, and analytics.
 - **Analytics** — Umami integration for visitor metrics and top posts.
+- **SEO Enhancements** — Canonical URLs, Schema.org structured data, RSS, Sitemap, and Robots support.
 - **AI Integration** — Cloudflare Workers AI integration.
 - **Theme System** — Extensible theme templates, fully supporting replacement of all pages and layouts.
 - **Import / Export** — Supports Markdown import and export, preserving images and frontmatter.
