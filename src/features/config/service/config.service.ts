@@ -21,6 +21,29 @@ export function resolveSystemConfig(
     email: {
       ...DEFAULT_CONFIG.email,
       ...config?.email,
+      provider: config?.email?.provider ?? "resend",
+      resend: {
+        ...DEFAULT_CONFIG.email?.resend,
+        ...config?.email?.resend,
+        // 旧格式迁移：email.apiKey → email.resend.apiKey
+        apiKey: config?.email?.resend?.apiKey ?? config?.email?.apiKey ?? "",
+      },
+      postmark: {
+        ...DEFAULT_CONFIG.email?.postmark,
+        ...config?.email?.postmark,
+      },
+      mailgun: {
+        ...DEFAULT_CONFIG.email?.mailgun,
+        ...config?.email?.mailgun,
+      },
+      sendgrid: {
+        ...DEFAULT_CONFIG.email?.sendgrid,
+        ...config?.email?.sendgrid,
+      },
+      mandrill: {
+        ...DEFAULT_CONFIG.email?.mandrill,
+        ...config?.email?.mandrill,
+      },
     },
     notification: {
       ...DEFAULT_CONFIG.notification,
